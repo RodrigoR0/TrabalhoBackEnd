@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliente e Produto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Clientes</h2>
+    <div class="clientes">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Email</th>
+            <th>Idade</th>
+          </tr>
+        </thead>
+        <tbody id="clientesTable">
+        </tbody>
+      </table>
+      <div class="add-form">
+        <input type="text" id=" idProduto" placeholder="Código do cliente">
+        <input type="text" id="nomeCliente" placeholder="Nome">
+        <input type="text" id="sobrenomeCliente" placeholder="Sobrenome">
+        <input type="text" id="emailCliente" placeholder="Email">
+        <input type="text" id="idadeCliente" placeholder="Idade">
+        <input type="submit" value="Adicionar Cliente" onclick="adicionarCliente()">
+      </div>
+    </div>
+
+    <h2>Produtos</h2>
+    <div class="produtos">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Data Atualizado</th>
+          </tr>
+        </thead>
+        <tbody id="produtosTable">
+        </tbody>
+      </table>
+      <div class="add-form">
+        <input type="text" id=" idProduto" placeholder="Código do Produto">
+        <input type="text" id="nomeProduto" placeholder="Nome">
+        <input type="text" id="descricaoProduto" placeholder="Descrição">
+        <input type="text" id="precoProduto" placeholder="Preço">
+        <input type="text" id="dataAtualizadoProduto" placeholder="Data Atualizado">
+        <input type="submit" value="Adicionar Produto" onclick="adicionarProduto()">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function adicionarCliente() {
+      alert('Adicionar cliente');
+    }
+
+    function adicionarProduto() {
+      alert('Adicionar produto');
+    }
+  </script>
+</body>
+
+</html>
